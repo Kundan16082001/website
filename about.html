@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - iWord Technologies Private Limited</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/LXkGGm9H/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .navbar-brand img { height: 40px; }
+        .page-header {
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://i.postimg.cc/D0c2FLPM/hero-banner.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #0d6efd;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 50%;
+            margin-right: 20px;
+            position: relative;
+        }
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 20px;
+            margin-right: 50%;
+        }
+        .footer { background: #222; color: #ccc; padding: 40px 0 10px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://i.postimg.cc/dVy9D3Wh/iword-logo-removebg-preview.png" alt="iWord Logo" class="me-2">
+                <span>Iword Technologies Pvt Ltd</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internship-training.html">Internships & Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact us</a></li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-light ms-lg-3"><i class="fas fa-paper-plane"></i> Apply Now</a>
+            </div>
+        </div>
+         <!-- WHATSAPP BUTTONS -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/919373488196" style="position: absolute;left: 96%;bottom: 25%;border-radius: 50%;" target="_blank" class="btn btn-success">
+            <i class="fab fa-whatsapp"></i></a>
+     </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About iWord Technologies</h1>
+            <p class="lead">Empowering IT careers since 2020</p>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="fw-bold mb-4">Our Story</h2>
+                    <p>iWord Technologies Private Limited was founded in 2020 with a vision to bridge the gap between academic learning and industry requirements. Based in Nagpur, Maharashtra, we have grown to become a leading provider of remote IT internships and training programs across India.</p>
+                    
+                    <p>Our mission is to empower students and fresh graduates with practical, industry-relevant skills that prepare them for successful careers in technology. We believe in making quality IT education accessible to everyone, regardless of their geographical location.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h3 class="text-primary">5000+</h3>
+                                <p class="mb-0">Students Trained</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center p-3 bg-light rounded">
+                                <h3 class="text-primary">95%</h3>
+                                <p class="mb-0">Placement Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://i.postimg.cc/QCXgtH4n/photo-2025-08-02-16-45-27-removebg-preview.png" alt="iWord Office" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Core Values</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="p-4">
+                        <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                        <h4>Quality Education</h4>
+                        <p>We provide industry-standard training with expert mentors and practical projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4">
+                        <i class="fas fa-laptop fa-3x text-primary mb-3"></i>
+                        <h4>Remote Learning</h4>
+                        <p>Learn from anywhere with our flexible, 100% remote internship and training programs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h4>Community Support</h4>
+                        <p>Join a vibrant community of learners and professionals supporting each other's growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2020</h5>
+                        <h6>Company Founded</h6>
+                        <p>iWord Technologies was established in Nagpur with a vision to transform IT education in India.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2021</h5>
+                        <h6>First 100 Students</h6>
+                        <p>Successfully trained our first batch of 100 students across various IT domains.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2022</h5>
+                        <h6>National Expansion</h6>
+                        <p>Extended our reach to students from all states in India, becoming a truly national platform.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2023</h5>
+                        <h6>5000+ Students Milestone</h6>
+                        <p>Crossed the significant milestone of training over 5000 students in various IT specializations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h5>2024</h5>
+                        <h6>Industry Partnerships</h6>
+                        <p>Established partnerships with leading IT companies for placement and internship opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Our Leadership Team</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    
+                    <div class="team-member">
+                        <img src="https://i.postimg.cc/5tZ7q0mK/ceo-placeholder.jpg" alt="CEO">
+                        <h5>Mr. Ishwar Giriya</h5>
+                        <p class="text-muted">Founder</p>
+                        <p class="text-muted">CTO</p>
+
+                        <p>With over 10 years of experience in the IT industry, Ishwar leads iWord Technologies with a passion for innovation and excellence in education.</p>
+                       </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="https://i.postimg.cc/5tZ7q0mK/ceo-placeholder.jpg" alt="COO">
+                        <h5>Mrs. Ayushi Purohit</h5>
+                        <p class="text-muted">Co. Founder</p>
+                        <p class="text-muted">COO</p>
+                        <p>With a strong background in education and business, Ayushi brings her expertise to drive operational excellence and student success at iWord.</p>
+                        </div>
+                </div>  
+    </section>
+    <!-- WHATSAPP BUTTONS -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/919373488196" style="position: absolute;left: 75%;" target="_blank" class="btn btn-success">
+            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+        </a>
+     </div>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="#" class="d-inline-flex align-items-center mb-2">
+                        <img src="https://i.postimg.cc/dVy9D3Wh/iword-logo-removebg-preview.png" alt="iWord Logo" height="32" class="me-2">
+                        <span class="fw-bold text-white">iWord Technologies Pvt Ltd</span>
+                    </a>
+                    <p class="mb-0">Empowering IT careers across India. Remote internships, expert training, and career guidance from Nagpur, Maharashtra.</p>
+                </div>
+                
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <div class="small">&copy; 2025 iWord Technologies Pvt Ltd. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Go to Top Button -->
+    <a href="#top" class="go-top" id="goTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist
+/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>

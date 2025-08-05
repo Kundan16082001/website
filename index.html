@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iword Technologies Private Limited</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/LXkGGm9H/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .navbar-brand img { height: 40px; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.postimg.cc/D0c2FLPM/hero-banner.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 110px 0 90px 0;
+            text-align: center;
+        }
+        .section-title { font-weight: 700; margin-bottom: 20px; }
+        .feature-icon { font-size: 2rem; color: #0d6efd; }
+        .footer { background: #222; color: #ccc; padding: 40px 0 10px 0; }
+        .footer a { color: #0d6efd; }
+        .go-top {
+            position: fixed; bottom: 20px; right: 20px; z-index: 999;
+            background: #0d6efd; color: #fff; border-radius: 50%; width: 40px; height: 40px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            display: none;
+        }
+        .go-top.show { display: flex; }
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .hero-section { padding: 100px 0; }
+            .brand-container { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media (max-width: 992px) {
+            .hero-section { padding: 90px 0; }
+            .brand-container { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .hero-section { padding: 80px 0; }
+            .brand-container { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 576px) {
+            .hero-section { padding: 70px 0; }
+            .brand-container { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .hero-section { padding: 60px 0; }
+            .brand-container { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 992px) {
+            .hero-section { padding: 90px 0; }
+            .brand-container { grid-template-columns: repeat(3, 1fr); }
+        }
+
+    </style>
+</head>
+<body id="top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://i.postimg.cc/dVy9D3Wh/iword-logo-removebg-preview.png" alt="iWord Logo" class="me-2">
+                <span>Iword Technologies Pvt Ltd</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="internship-training.html">Internships & Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-light ms-lg-3"><i class="fas fa-paper-plane"></i> Apply Now</a>
+            </div>
+        </div>
+        <!-- WHATSAPP BUTTONS -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/919373488196" style="position: absolute;left: 96%;bottom: 25%;border-radius: 50%;" target="_blank" class="btn btn-success">
+            <i class="fab fa-whatsapp" style="font-size: 25px;"></i></a>
+     </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Empowering IT Careers Across India</h1>
+            <p class="lead mb-4">iWord Technologies Private Limited offers remote IT internships and training programs for students and graduates. Start your journey with us and build your future in tech!</p>
+            <a href="#internships" class="btn btn-lg btn-warning me-2"><i class="fas fa-laptop-code"></i> Explore Internships</a>
+            <a href="#training" class="btn btn-lg btn-outline-light"><i class="fas fa-chalkboard-teacher"></i> View Training</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://i.postimg.cc/QCXgtH4n/photo-2025-08-02-16-45-27-removebg-preview.png" alt="iWord Office" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">About iWord Technologies Pvt Ltd</h2>
+                    <p>Located in Nagpur, Maharashtra, iWord Technologies is a leading provider of IT internships and training programs. We are dedicated to bridging the gap between academic learning and industry requirements by offering hands-on, real-world experience to students and fresh graduates across India.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> 100% Remote Internships</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Industry-Relevant Training</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Mentorship from IT Experts</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Certification & Placement Assistance</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- about link -->
+              <div class="text-center mt-4">
+                <a href="about.html" class="btn btn-primary btn-lg"><i class="fas fa-user-plus"></i> About us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery section -->
+     <section class="py-5" id="galley">
+        <div class="container"> 
+            <h2 class="section-title">Gallery</h2>
+            <p class="text-center mb-4">Explore our vibrant community and the exciting moments from our internships and training sessions.</p>
+            <div class="row g-4">
+                <!-- 1 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/VLPv1TPj/Opera-Snapshot-2025-07-25-175316-www-iword-in.png" alt="Gallery Image 1" class="img-fluid rounded shadow">
+                </div>
+                <!-- 2 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/rmty2Ghn/IMG-20250726-WA0003.jpg" alt="Gallery Image 2" class="img-fluid rounded shadow">
+                    </div>
+                <!-- 3 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/BZHZhgPt/Opera-Snapshot-2025-07-25-175208-www-iword-in.png" alt="Gallery Image 3" class="img-fluid rounded shadow">
+                    </div>
+                    <!-- 4 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/bJbPByJ4/Opera-Snapshot-2025-07-25-175230-www-iword-in.png" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+                <!-- 5 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/ZY8ZP5Xd/IMG-20250726-WA0007.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+                <!-- 6 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/zBmZWsj7/photo-2025-08-03-19-57-53.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+                <!-- 7 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/mgh0nLpV/photo-2025-08-03-19-59-19.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+                <!-- 8 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/1t0TFf4R/photo-2025-08-03-20-00-11.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+                <!-- 9 image -->
+                <div class="col-md-4">
+                    <img src="https://i.postimg.cc/mDSXDJ6t/photo-2025-08-03-20-01-04.jpg" alt="Gallery Image 4" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="gallery.html" class="btn btn-warning btn-lg"><i class="fas fa-images"></i> View Gallery</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- Internships Section -->
+    <section class="py-5 bg-light" id="internships">
+        <div class="container">
+            <h2 class="section-title text-center">Our Internship Programs</h2>
+            <p class="text-center mb-5">Gain practical experience in trending IT domains with our flexible, remote internships.</p>
+            <div class="row g-4">
+                <!-- 12 Major IT Internship Fields -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/cLqQpTXj/elements-of-cloud-computing-2021.png" alt="Cloud Computing" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text">Work on cloud platforms like AWS, Azure, and Google Cloud. Learn deployment, scaling, and cloud security.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/8CprGYWy/images.jpg" alt="Data Science" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Analyze data, build models, and gain insights using Python, R, and machine learning frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/X76cZ4Cq/images.png" alt="Fullstack Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Fullstack Development</h5>
+                            <p class="card-text">Develop web applications using frontend and backend technologies like React, Node.js, and MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/qvj8ZKZ6/untitlsssssed.png" alt="Web Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Build responsive websites with HTML, CSS, JavaScript, and popular frameworks like Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/WbSF2vmQ/what-is-cybersecurity-1370511057-standard-1536x1536.webp" alt="Cybersecurity" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Learn about network security, ethical hacking, and protecting systems from cyber threats.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/0ymTY8t4/images-1.jpg" alt="Mobile App Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Create Android and iOS apps using Flutter, React Native, or native development tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/KY9hz0pc/artificial-intelligence-1.webp" alt="Artificial Intelligence" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Artificial Intelligence</h5>
+                            <p class="card-text">Work on AI projects, including NLP, computer vision, and intelligent automation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/9X7s5X2Q/network-computer.jpg" alt="Networking" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Networking</h5>
+                            <p class="card-text">Understand network protocols, configuration, and troubleshooting in real-world scenarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/hGNMpxfb/ux-ui-design-322afd6292.webp" alt="UI/UX Design" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Design user interfaces and experiences using Figma, Adobe XD, and usability principles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/SRgMtFgF/images-1.png" alt="DevOps" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">DevOps</h5>
+                            <p class="card-text">Learn CI/CD, automation, and infrastructure as code with tools like Docker and Jenkins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/mrWtjgT1/1736405454584business-analyst.webp" alt="Business Analytics" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Business Analytics</h5>
+                            <p class="card-text">Use analytics tools to drive business decisions and visualize data insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/8PxH1TPZ/PXL-20230629-121303976-1-scaled.jpg" alt="Salesforce Admin Developer" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;border-radius: 50%;">
+                            <h5 class="card-title">Salesforce Admin Developer</h5>
+                            <p class="card-text">Get hands-on with Salesforce CRM, automation, and app development on the Salesforce platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-user-plus"></i> Apply for Internship</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="py-5" id="training">
+        <div class="container">
+            <h2 class="section-title text-center">Professional IT Training</h2>
+            <p class="text-center mb-5">Upgrade your skills with our expert-led training modules, designed for both beginners and professionals.</p>
+            <div class="row g-4">
+                <!-- 12 Major IT Training Fields -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/cLqQpTXj/elements-of-cloud-computing-2021.png" alt="Cloud Computing" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text">Master cloud services, deployment, and management on AWS, Azure, and Google Cloud.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/8CprGYWy/images.jpg" alt="Data Science" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Learn data analysis, visualization, and machine learning using Python and R.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/X76cZ4Cq/images.png" alt="Fullstack Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Fullstack Development</h5>
+                            <p class="card-text">Comprehensive training in frontend and backend web development technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/qvj8ZKZ6/untitlsssssed.png" alt="Web Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Build modern, responsive websites with HTML, CSS, JavaScript, and frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/WbSF2vmQ/what-is-cybersecurity-1370511057-standard-1536x1536.webp" alt="Cybersecurity" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Cybersecurity</h5>
+                            <p class="card-text">Understand security fundamentals, ethical hacking, and risk management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/0ymTY8t4/images-1.jpg" alt="Mobile App Development" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Mobile App Development</h5>
+                            <p class="card-text">Develop cross-platform mobile apps using Flutter, React Native, or native tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/KY9hz0pc/artificial-intelligence-1.webp" alt="Artificial Intelligence" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Artificial Intelligence</h5>
+                            <p class="card-text">Hands-on training in AI concepts, algorithms, and real-world applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/9X7s5X2Q/network-computer.jpg" alt="Networking" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Networking</h5>
+                            <p class="card-text">Learn about network setup, configuration, and troubleshooting techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/hGNMpxfb/ux-ui-design-322afd6292.webp" alt="UI/UX Design" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Master user interface and experience design with industry-standard tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/SRgMtFgF/images-1.png" alt="DevOps" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">DevOps</h5>
+                            <p class="card-text">Get trained in automation, CI/CD pipelines, and cloud infrastructure management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/mrWtjgT1/1736405454584business-analyst.webp" alt="Business Analytics" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;">
+                            <h5 class="card-title">Business Analytics</h5>
+                            <p class="card-text">Learn to analyze business data and create actionable insights with BI tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="https://i.postimg.cc/8PxH1TPZ/PXL-20230629-121303976-1-scaled.jpg" alt="Salesforce Admin Developer" class="mb-3 rounded" style="width:200px;height:200px;object-fit:cover;border-radius: 50%;">
+                            <h5 class="card-title">Salesforce Admin Developer</h5>
+                            <p class="card-text">Training in Salesforce CRM, automation, and app development for business solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contact" class="btn btn-outline-primary btn-lg"><i class="fas fa-chalkboard"></i> Request Training Details</a>
+            </div>
+        </div>
+    </section>
+    <!-- partner company -->
+      <section class="py-5 bg-light text-center" id="partners">
+        <div class="container">
+            <h2 class="section-title">Our Partner Companies</h2>
+            <p class="text-muted mb-4">We collaborate with leading companies to provide our interns with real-world experience and opportunities.</p>
+            <div class="brand-container grid" style=" display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 20px; justify-items: center;">
+                <img src="https://u.cubeupload.com/Leo21/brand1.png" alt="" width="70" height="70">
+                <img src="https://u.cubeupload.com/Leo21/brand2.png" alt="" width="70" height="70">
+                <img src="https://u.cubeupload.com/Leo21/brand3.png" alt="" width="70" height="70">
+                <img src="https://u.cubeupload.com/Leo21/brand4.png" alt="" width="70" height="70">
+                <img src="https://u.cubeupload.com/Leo21/brand5.png" alt="" width="70" height="70">
+                <img src="https://u.cubeupload.com/Leo21/brand6.png" alt="" width="70" height="70">
+            </div>
+        </section>
+
+
+
+   <!-- Testimonials Section -->
+    <section class="py-5 bg-light" id="testimonials">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Interns Say</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <p class="mb-3"><i class="fas fa-quote-left text-primary"></i> The remote internship at iWord gave me real project experience and boosted my confidence. Highly recommended!</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="48" alt="Intern">
+                                <div>
+                                    <strong>Rahul Sharma</strong><br>
+                                    <span class="text-muted small">Web Development Intern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <p class="mb-3"><i class="fas fa-quote-left text-primary"></i> The mentors are very supportive and the training modules are up-to-date with industry standards.</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="48" alt="Intern">
+                                <div>
+                                    <strong>Priya Deshmukh</strong><br>
+                                    <span class="text-muted small">Data Science Intern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="card-body">
+                            <p class="mb-3"><i class="fas fa-quote-left text-primary"></i> I got placed in an IT company after completing my internship at iWord. Thank you for the guidance!</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://randomuser.me/api/portraits/men/54.jpg" class="rounded-circle me-3" width="48" alt="Intern">
+                                <div>
+                                    <strong>Akash Verma</strong><br>
+                                    <span class="text-muted small">App Development Intern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <p class="text-center mb-4">Ready to start your IT career? Reach out to us for internship and training opportunities.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="whatsappForm" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Your Name" autocomplete="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required placeholder="you@example.com" autocomplete="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="applyFor" class="form-label">Apply For</label>
+                            <select class="form-select" id="applyFor" required>
+                                <option value="" disabled selected>Select Internship/Training</option>
+                                <option value="Internship">Internship</option>
+                                <option value="Training">Training</option>
+                                <option value="Internship & Training">Internship & Training</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="domains" class="form-label">Domains</label>
+                            <select class="form-select" id="domains" required>
+                                <option value="" disabled selected>Select Internship/Training Domains</option>
+                                <option value="Salesforce Admin Developer">Salesforce Admin Developer</option>
+                                <option value="Fullstack Developer">Fullstack Developer</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="AUTOCAD">AUTOCAD</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required placeholder="Your Phone Number" pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">City Name</label>
+                            <input type="text" class="form-control" id="location" required placeholder="Your city name.." autocomplete="address-level2">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane"></i> Submit</button>
+                    </form>
+                    <!-- Notification Modal -->
+                    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body text-center">
+                            <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
+                            <h5 class="mb-2">Your request is submitted!</h5>
+                            <p>We will contact you soon.</p>
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0">
+                    <div class="bg-light rounded p-4 h-100">
+                        <h5 class="mb-3">Contact Details</h5>
+                        <p><i class="fas fa-map-marker-alt text-primary me-2"></i> Nandanvan, Nagpur, Maharashtra, India</p>
+                        <p><i class="fas fa-phone text-primary me-2"></i> <a href="#contact">+91 93734 88196</a></p>
+                        <p><i class="fas fa-envelope text-primary me-2"></i> <a href="#contact">info@iword.in</a></p>
+                        <div class="mt-3">
+                            <h5 class="mb-3">Follow Us</h5>
+                            <a href="https://www.instagram.com/iwordtechnology_pvt_ltd?igsh=YTA2NHRkMG8zZ21n" class="me-2 text-danger"><i class="fab fa-instagram fa-lg" style="font-size: 40px;"></i></a>
+                            <a href="https://www.linkedin.com/company/iword-technology/posts/?feedView=all" class="me-2 text-info"><i class="fab fa-linkedin fa-lg" style="font-size: 40px;"></i></a>
+                            <a href="https://wa.me/919373488196" class="text-success" class="me-2 text-info"><i class="fab fa-whatsapp fa-lx" style="font-size: 40px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHATSAPP BUTTONS -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/919373488196" style="position: absolute;left: 75%;" target="_blank" class="btn btn-success">
+            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+        </a>
+     </div>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <a href="#" class="d-inline-flex align-items-center mb-2">
+                        <img src="https://i.postimg.cc/dVy9D3Wh/iword-logo-removebg-preview.png" alt="iWord Logo" height="32" class="me-2">
+                        <span class="fw-bold text-white">iWord Technologies Pvt Ltd</span>
+                    </a>
+                    <p class="mb-0">Empowering IT careers across India. Remote internships, expert training, and career guidance from Nagpur, Maharashtra.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <div class="small">&copy; 2025 iWord Technologies Pvt Ltd. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Go Top Button -->
+    <a href="#top" class="go-top" id="goTopBtn" aria-label="Go to top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Go Top Script -->
+    <script>
+        const goTopBtn = document.getElementById('goTopBtn');
+        window.addEventListener('scroll', function() {
+            if(window.scrollY > 200) {
+                goTopBtn.classList.add('show');
+            } else {
+                goTopBtn.classList.remove('show');
+            }
+        });
+
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const applyFor = document.getElementById('applyFor').value.trim();
+            const domains = document.getElementById('domains').value.trim();
+            const location = document.getElementById('location').value.trim();
+
+            // Compose WhatsApp message
+            const message = `hello sir:%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AApply_For: ${applyFor}%0ADomain: ${domains}%0ACity: ${location}`;
+
+            // WhatsApp API link
+            const whatsappUrl = `https://wa.me/919373488196?text=${message}`;
+
+            // Open WhatsApp in new tab
+            window.open(whatsappUrl, '_blank');
+
+            // Show modal (Bootstrap)
+            const modal = new bootstrap.Modal(document.getElementById('submitModal'));
+            modal.show();
+
+            // Optionally reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
